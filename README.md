@@ -2,11 +2,15 @@
 
 # Getting the toolchain
 
-`wget www.antmicro.com/downloads/riscv-gnu-toolchain.tar.gz`
+```
+wget www.antmicro.com/downloads/riscv-gnu-toolchain.tar.gz
+```
 
 # Getting the sources
 
-`git clone https://github.com/antmicro/litex-linux-riscv.git`
+```
+git clone https://github.com/antmicro/litex-linux-riscv.git
+```
 
 # Building
 
@@ -29,7 +33,9 @@ dtc -I dts -O dtb -o vmlinux.dtb rv32.dts
 
 Litex requires different gcc toolchain than Linux. The toolchain can be obtained with:
 
+```
 wget www.antmicro.com/downloads/riscv-gcc.tar.gz
+```
 
 ## Getting the sources
 
