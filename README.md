@@ -2,7 +2,7 @@
 
 # Getting the toolchain
 
-wget www.antmicro.com/downloads/riscv-gnu-toolchain.tar.gz
+`wget www.antmicro.com/downloads/riscv-gnu-toolchain.tar.gz`
 
 # Getting the sources
 
