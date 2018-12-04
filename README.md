@@ -62,6 +62,44 @@ make rv32_defconfig
 make -j`nproc`
 ```
 
+# openOCD
+
+Getting the sources:
+
+```
+git clone https://github.com/SpinalHDL/openocd_riscv
+```
+
+building
+
+```
+./configure --enable-ftdi --enable-dummy --disable-werror
+make -j`nproc`
+sudo make install
+```
+
+connecting to the board
+
+```
+openocd -f vexriscv.cfg
+
+```
+
+in a separate terminal run telnet and connect to the openOCD
+
+```
+telnet localhost 4444
+```
+
+upload and run Linux:
+
+```
+load_image /path/to/vmlinux.bin 0x40000000
+load_image /path/to/vmlinux.dtb 0x41000000
+load_image /path/to/initramdisk.gz 0x42000000
+resume 0xC0000000
+```
+
 # Ideas
 
 * run the LiteX SoC in Verilator and describe what you needed to do, try to run the Linux there
