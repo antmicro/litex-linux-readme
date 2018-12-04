@@ -12,12 +12,15 @@ wget www.antmicro.com/downloads/riscv-gnu-toolchain.tar.gz
 
 kernel configuration:
 
+```
 cd litex-linux-riscv
 cp litex_default_configuration .config
 ARCH=riscv CROSS_COMPILE=CROSS_COMPILE=riscv32-unknown-linux-gnu- make -j`nproc`
 riscv32-unknown-linux-gnu-objcopy -O binary vmlinux vmlinux.bin
+```
 
 devicetree:
 
+```
 dtc -I dts -O dtb -o vmlinux.dtb rv32.dts
-
+```
