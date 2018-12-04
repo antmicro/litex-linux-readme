@@ -45,6 +45,16 @@ cd litex-rv32-linux-system
 git submodule update --init --recursive
 ```
 
+# Building the SoC
+
+```
+source env.sh
+# to generate verilog run
+make verilog
+# to generate verilog, build the system and generate programming file run (this step requires microsemi tools intalled)
+make
+```
+
 # U-Boot
 
 U-Boot sources can be obtained with:
