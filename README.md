@@ -24,3 +24,17 @@ devicetree:
 ```
 dtc -I dts -O dtb -o vmlinux.dtb rv32.dts
 ```
+
+# Litex SoC
+
+Litex requires different gcc toolchain than Linux. The toolchain can be obtained with:
+
+wget www.antmicro.com/downloads/riscv-gcc.tar.gz
+
+# Getting the sources
+
+```
+git clone https://github.com/antmicro/litex-rv32-linux-system
+cd litex-rv32-linux-system
+git submodule update --init --recursive
+```
