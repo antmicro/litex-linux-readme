@@ -38,3 +38,20 @@ git clone https://github.com/antmicro/litex-rv32-linux-system
 cd litex-rv32-linux-system
 git submodule update --init --recursive
 ```
+
+# U-Boot
+
+U-Boot sources can be obtained with:
+
+```
+git clone https://github.com/antmicro/RV32_U-Boot
+cd RV32_U-Boot
+git checkout 32bit
+```
+
+Building
+
+```
+make rv32_defconfig
+make -j`nproc`
+```
