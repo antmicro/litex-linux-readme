@@ -94,6 +94,7 @@ telnet localhost 4444
 upload and run Linux:
 
 ```
+halt
 load_image /path/to/vmlinux.bin 0x40000000
 load_image /path/to/vmlinux.dtb 0x41000000
 load_image /path/to/initramdisk.gz 0x42000000
