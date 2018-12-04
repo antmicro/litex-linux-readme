@@ -1,5 +1,9 @@
 # Running Linux on LiteX based Risc-V SoC
 
+# Getting the toolchain
+
+wget www.antmicro.com/downloads/riscv-gnu-toolchain.tar.gz
+
 # Getting the sources
 
 `git clone https://github.com/antmicro/litex-linux-riscv.git`
