@@ -1,5 +1,25 @@
 # Running Linux on LiteX based Risc-V SoC
 
+# Dependencies on Ubuntu 18.04
+Install dependencies with
+```
+sudo apt install device-tree-compiler bison flex
+```
+
+You will also need to run this to add a symlink for this library:
+```
+sudo ln -s /usr/lib/x86_64-linux-gnu/libmpfr.so.6 /usr/lib/x86_64-linux-gnu/libmpfr.so.4
+```
+
+Edit your `~/.bashrc` file and add these two lines to the end.  Make sure to replace with your actual path:
+
+```
+export PATH=$PATH:/path/to/riscv-gnu-toolchain/bin
+export PATH=$PATH:/path/to/riscv-gcc/bin
+```
+
+Close and re-open your bash window to load these new variables.
+
 # Getting the toolchain
 
 ```
