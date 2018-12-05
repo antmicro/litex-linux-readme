@@ -19,7 +19,7 @@ kernel configuration:
 ```
 cd litex-linux-riscv
 cp litex_default_configuration .config
-ARCH=riscv CROSS_COMPILE=CROSS_COMPILE=riscv32-unknown-linux-gnu- make -j`nproc`
+ARCH=riscv CROSS_COMPILE=riscv32-unknown-linux-gnu- make -j`nproc`
 riscv32-unknown-linux-gnu-objcopy -O binary vmlinux vmlinux.bin
 ```
 
