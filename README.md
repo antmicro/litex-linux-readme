@@ -111,6 +111,19 @@ load_image /path/to/initramdisk.gz 0x42000000
 resume 0xC0000000
 ```
 
+# Renode
+
+To run Renode go to http://github.com/renode/renode and get the vexriscv branch.
+
+After you compile it, open the `scripts/hackaton` file and adjust the paths to the vmlinux, dtb and rootfs files.
+
+Then start Renode and run:
+
+```
+s @scripts/hackaton
+```
+
+
 # Ideas
 
 * run the LiteX SoC in Verilator and describe what you needed to do, try to run the Linux there
