@@ -1,4 +1,4 @@
-# Running Linux on LiteX based RISC-V SoC
+# Running Linux on LiteX-based RISC-V SoC
 
 # Getting the toolchain
 
